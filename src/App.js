@@ -1,24 +1,41 @@
-import React from 'react';
+import React, { useState } from "react";
 import { movies } from './movieDummy';
-import Movie from './components/Movie'; 
-import Detail from './components/Detail'; 
+import Movie from './components/Movie/Movie'; 
+import Detail from './components/Detail/Detail'; 
 
 function App() {
+    const [hoveredItem, setHoveredItem] = useState(null);
+
+    const handleMouseEnter = (id) => {
+      setHoveredItem(id);
+    };
+  
+    const handleMouseLeave = () => {
+      setHoveredItem(null);
+    };
  
   return (
-    <div className="App">
+    <div>
       <ul>
         {movies.results.map((props) => (
           <li key={props.id}>
-            <div className='align' >
-              <Movie props={props} />
-              <Detail props={props} />
+            <div
+              className="user-wrap"
+              onMouseEnter={() => handleMouseEnter(props.id)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <div className='user-box'>
+                <Movie props={props} />
+              </div>
+              {hoveredItem === props.id && (
+                <div className='user-text'>
+                  <Detail props={props} />
+                </div>
+              )}
             </div>
           </li>
-          
         ))}
       </ul>
- 
     </div>
   );
 }
