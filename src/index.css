@@ -1,8 +1,4 @@
 
-.align{
-    display: flex;
-    align-items: center ;
-}
 ul{
     text-align : center
 }
@@ -14,18 +10,8 @@ li{
 body{
     background-color: #22254b;
 
-
 }
-.box{
-   
-   
 
-    display: block;
-
-   
-  }
-  
-  
   .user-wrap{
    
     position: relative;

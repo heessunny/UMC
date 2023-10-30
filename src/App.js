@@ -22,11 +22,8 @@ function App() {
             <div
               className="user-wrap"
               onMouseEnter={() => handleMouseEnter(props.id)}
-              onMouseLeave={handleMouseLeave}
-            >
-              <div className='user-box'>
+              onMouseLeave={handleMouseLeave}>
                 <Movie props={props} />
-              </div>
               {hoveredItem === props.id && (
                 <div className='user-text'>
                   <Detail props={props} />
