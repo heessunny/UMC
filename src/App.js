@@ -1,38 +1,26 @@
-import React, { useState } from "react";
-import { movies } from './movieDummy';
-import Movie from './components/Movie/Movie'; 
-import Detail from './components/Detail/Detail'; 
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import TV from'./pages/TV'; 
+import Movies from'./pages/Movies'; 
+import Celebirity from "./pages/Celebirity";
+import Home from "./pages/Home";
 
 function App() {
-    const [hoveredItem, setHoveredItem] = useState(null);
-
-    const handleMouseEnter = (id) => {
-      setHoveredItem(id);
-    };
-  
-    const handleMouseLeave = () => {
-      setHoveredItem(null);
-    };
- 
+    
   return (
-    <div>
-      <ul>
-        {movies.results.map((props) => (
-          <li key={props.id}>
-            <div
-              className="user-wrap"
-              onMouseEnter={() => handleMouseEnter(props.id)}
-              onMouseLeave={handleMouseLeave}>
-                <Movie props={props} />
-              {hoveredItem === props.id && (
-                <div className='user-text'>
-                  <Detail props={props} />
-                </div>
-              )}
-            </div>
-          </li>
-        ))}
-      </ul>
+    <div className="root-wrap">
+      <BrowserRouter>
+      <Header/>
+      <div className="App">
+        <Routes>
+        <Route path="/Home" element={<Home />} />
+          <Route path="/Movies" element={<Movies />} />
+          <Route path="/TV" element={<TV />} />
+          <Route path="/Celebirity" element={<Celebirity />} />
+        </Routes>
+      </div>
+      </BrowserRouter>
     </div>
   );
 }

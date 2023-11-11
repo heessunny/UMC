@@ -4,10 +4,11 @@ export const Img = styled.img`
  width: 250px;
     height: 330px;
     margin: 0px;
+    padding: 0px;
 `;
 
 export const Table = styled.table`
-  border-radius: 5px;
+    border-radius:   0px 0px 10px 10px;
     border: 0px;
     background-color: #373b69;
     padding: 0px;
@@ -22,8 +23,8 @@ padding: 0px;
 `;
 
 export const Title=styled.td`
-padding-top: 5px;
-    padding-bottom: 30px;
+padding-top: 10px;
+    padding-bottom: 20px;
     padding-left: 20px;
     text-align: left;
     width:150px;
@@ -31,8 +32,8 @@ padding-top: 5px;
 `;
 
 export const Vote=styled.td`
- padding-top: 15px;
-    padding-bottom: 50px;
+ padding-top: 30px;
+    padding-bottom: 40px;
     text-align: right;
     padding-right: 20px;
 `;

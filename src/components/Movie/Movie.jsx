@@ -7,7 +7,7 @@ function Movie({ props }) {
         <S.Table>
         <thead>
             <tr>
-                <S.Td colSpan="2" height="0"> <S.Img src={props.poster_path} alt={props.title}  />
+                <S.Td colSpan="2" height="0"> <S.Img src={props.poster_path} alt={props.title} />
             </S.Td>
             </tr>
             </thead>
