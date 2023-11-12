@@ -1,9 +1,18 @@
 import React from 'react';
 import * as S from './Movie.style';
+import { useNavigate } from 'react-router-dom';
 
 function Movie({ props }) {
+    const navigate=useNavigate();
+    
+    const onClickMovieItem=()=>{
+
+        navigate(`/movie/${props.title}`,{
+            state:props
+        })
+    }
   return (
-    <div>
+    <div className="movie-container" onClick={onClickMovieItem}>
         <S.Table>
         <thead>
             <tr>

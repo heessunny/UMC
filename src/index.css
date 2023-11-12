@@ -9,9 +9,12 @@ li{
 }
 
 .header-container{
-    background-color:  #22254b;
+    background-color:  #032541;
     }
-
+    .header-wrap {
+        margin: 0px;
+        align-items: center;
+    }
   .user-wrap{
    
     position: relative;
@@ -41,8 +44,32 @@ li{
     margin-top: 0px;
     padding-top: 0px;
   }
-  .header-wrap {
+
+
+.login button{
+    border-radius: 30px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+    color: #22254b;
+}
+.login ul{
+    text-align : center
+}
+.login li{
+    color: white;
+    padding-left: 10px;
+    display : inline-block
+
+}
+.page-container{
     max-width: 1400px;
-    margin: 0px;
-    align-items: center;
+    margin:0 auto;
+    padding:32px 0;
+}
+.page-container ul{
+    text-align : left
+}
+.page-container li{
+    display : inline-block
 }

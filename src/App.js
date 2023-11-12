@@ -5,6 +5,9 @@ import TV from'./pages/TV';
 import Movies from'./pages/Movies'; 
 import Celebirity from "./pages/Celebirity";
 import Home from "./pages/Home";
+import MovieDetail from "./pages/MovieDetail";
+import NotFound from "./pages/NotFound";
+
 
 function App() {
     
@@ -16,8 +19,11 @@ function App() {
         <Routes>
         <Route path="/Home" element={<Home />} />
           <Route path="/Movies" element={<Movies />} />
+          <Route path="/movie/:title" element={<MovieDetail />} />
           <Route path="/TV" element={<TV />} />
           <Route path="/Celebirity" element={<Celebirity />} />
+          <Route path="/*" element={<NotFound/>} />
+         
         </Routes>
       </div>
       </BrowserRouter>

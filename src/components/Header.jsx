@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import LoginControl from './LoginControl'
 
 const Header = () => {
     const name = {
@@ -35,6 +36,10 @@ const Header = () => {
                 </li>
                 <li style={listItemStyle}>
                     <Link to="/Celebirity" style={name}>Celebirity</Link>
+                </li>
+                <li style={listItemStyle}>
+                    <LoginControl/>
+
                 </li>
             </ul>
             </div>
