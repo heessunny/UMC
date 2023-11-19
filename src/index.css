@@ -1,13 +1,21 @@
 
-ul{
+.header-container ul{
     text-align : center
 }
-li{
+.header-container li{
 
     display : inline-block
     
 }
 
+.movieContainer ul{
+    text-align : center
+}
+.movieContainer li{
+
+    display : inline-block
+    
+}
 .header-container{
     background-color:  #032541;
     }
@@ -73,3 +81,61 @@ li{
 .page-container li{
     display : inline-block
 }
+.error{
+    font-size: 15px;
+    height: 20px;
+    color:red;
+    font-weight: 700;
+    
+}
+
+.btnDisabled {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #f1f1f1;
+  }
+.btnActive {
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    color:aliceblue;
+    background-color: #22254b;
+ }
+ .errorID-message{
+    color: red;
+ }
+  .errorPW-message{
+    color: red;
+ }
+ .LoginPage{
+    max-width: 1400px;
+    margin:0 auto;
+    padding-top:100px;
+    padding-left: 500px;
+
+ }
+ .login {
+    text-decoration-line: none;
+    
+ }
+ .outbox{
+    margin-top: 20px;
+ }
+ .outbox td{
+   margin: 20px;
+    height: 100px;
+    font-size: 13px;
+ }
+ 
+ .idInput,.pwInput{
+    margin-top: 5px;
+    border-radius: 5px;
+    height: 40px;
+    width: 600px;
+    background-color: white;
+ }
+ .idpw{
+    font-size: 40px;
+    font-weight: bolder;
+ }

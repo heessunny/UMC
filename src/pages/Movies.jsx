@@ -1,16 +1,16 @@
 import React from "react";
 import { movies } from '../movieDummy';
-import Movie from '../components/Movie/Movie';
+import Container from '../components/Container/Container';
 
 
 function Movies() {
 
     return (
-      <div>
+      <div className="movieContainer">
         <ul>
           {movies.results.map((props) => (
             <li key={props.id}>
-            <Movie props={props} />
+            <Container props={props} />
             </li>
           ))}
         </ul>

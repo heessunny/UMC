@@ -39,7 +39,6 @@ const Header = () => {
                 </li>
                 <li style={listItemStyle}>
                     <LoginControl/>
-
                 </li>
             </ul>
             </div>
